@@ -1,37 +1,19 @@
 import 'package:flutter/material.dart';
+import 'dice_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(RollDice());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
+class RollDice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Welcome peasants!',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('First App'),
-        ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
-              Text(
-                'Hello World!',
-              ),
-              Text(
-                'It\'s time to learn Flutter!',
-              ),
-            ],
-          ),
-        ),
-      ),
+      home: DicePage(),
     );
   }
 }
